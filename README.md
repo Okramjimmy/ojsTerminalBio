@@ -13,6 +13,9 @@ Cyberpunk-themed academic portfolio UI files for [ojsTerminalBio](https://pypi.o
 ### Profile Editor
 ![Profile Editor](screenshots/admin_profile.png)
 
+### Page Editor
+![Page Editor](screenshots/page_editor.png)
+
 ## �📦 Installation
 
 ### Option 1: Install via PyPI (Recommended)
