@@ -2,7 +2,18 @@
 
 Cyberpunk-themed academic portfolio UI files for [ojsTerminalBio](https://pypi.org/project/ojsTerminalBio/).
 
-## 📦 Installation
+## � Screenshots
+
+### Home Page
+![Home Page](screenshots/home.png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin_dashboard.png)
+
+### Profile Editor
+![Profile Editor](screenshots/admin_profile.png)
+
+## �📦 Installation
 
 ### Option 1: Install via PyPI (Recommended)
 ```bash
@@ -97,10 +108,69 @@ export OJSTB_DATABASE_URL="sqlite:///./ojsterminalbio.db"
 
 ---
 
+## � Admin Panel Access
+
+1. Navigate to: **http://localhost:7777/admin/login**
+2. Enter credentials:
+   - Email: `admin@example.com`
+   - Password: `admin123`
+3. Click Login
+
+### Admin Pages
+
+| URL | Description |
+|-----|-------------|
+| `/admin/dashboard` | Overview with stats |
+| `/admin/profile` | Edit name, bio, contact info |
+| `/admin/publications` | Manage research papers |
+| `/admin/projects` | Manage sponsored projects |
+| `/admin/students` | Add PhD/MTech students |
+| `/admin/courses` | Add courses taught |
+| `/admin/pages` | Create custom pages |
+| `/admin/settings` | Theme & site settings |
+
+---
+
+## 🎨 Customization Guide
+
+### 1. Change Theme Color
+Go to **Admin → Settings → Theme Primary Color**
+- Cyan (default)
+- Pink
+- Amber
+- Green
+
+### 2. Edit Profile Info
+Go to **Admin → Profile**
+- Basic Info: Name, Title, Department
+- Contact: Email, Phone, Address
+- Bio: About yourself
+- External Links: Google Scholar, DBLP, etc.
+
+### 3. Matrix Effect
+Go to **Admin → Settings**
+- Enable/disable matrix rain
+- Change characters (supports emoji, Unicode)
+- Adjust opacity
+
+### 4. Add Custom Pages
+Go to **Admin → Pages → Create Page**
+- Drag & drop blocks
+- Add cards, text, buttons
+- Publish to menu
+
+### 5. Manage Content
+- **Publications**: Add research papers with DOI links
+- **Projects**: Add sponsored projects with funding info
+- **Students**: Add supervised students
+- **Courses**: Add courses with syllabus
+
+---
+
 ## 📄 License
 
 MIT License
 
 ## 👤 Author
 
-Sanasam Ranbir Singh - [IIT Guwahati](https://www.iitg.ac.in)
+Okram Jimmy Singh
