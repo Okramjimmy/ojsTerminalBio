@@ -1,5 +1,6 @@
 {% extends "public/base.html" %}
-{% block title %}{{ profile.name if profile }} | IIT Guwahati{% endblock %}
+{% block title %}{{ profile.name if profile }} | {{ profile.institution if profile and profile.institution else
+'Portfolio' }}{% endblock %}
 
 {% block content %}
 <!-- Hero Section -->
