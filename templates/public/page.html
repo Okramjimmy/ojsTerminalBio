@@ -11,8 +11,25 @@
         <h1 class="page-title">{{ page.title }}</h1>
     </div>
 
-    <div class="prose prose-invert prose-cyan max-w-none">
+    <div id="page-content" class="prose prose-invert prose-cyan max-w-none">
         {{ page.content | safe }}
     </div>
 </section>
+
+<script>
+    // Make all tables read-only on public pages by removing contenteditable
+    document.addEventListener('DOMContentLoaded', function () {
+        const pageContent = document.getElementById('page-content');
+        if (pageContent) {
+            // Remove contenteditable from all elements
+            pageContent.querySelectorAll('[contenteditable]').forEach(el => {
+                el.removeAttribute('contenteditable');
+            });
+            // Remove any table control buttons that might have been saved
+            pageContent.querySelectorAll('.table-controls, .add-row-btn, .add-col-btn, .delete-row-btn, .delete-col-btn').forEach(el => {
+                el.remove();
+            });
+        }
+    });
+</script>
 {% endblock %}
